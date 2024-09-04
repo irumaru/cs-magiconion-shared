@@ -7,4 +7,9 @@ namespace Hello.Shared
   {
     UnaryResult<string> SayAsync(string mes);
   }
+
+  public interface CreateAccount : IService<CreateAccount>
+  {
+    UnaryResult<string> CreateAccountAsync(string username);
+  }
 }
